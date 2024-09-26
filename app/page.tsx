@@ -1,9 +1,14 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import { findPackages } from "find-packages";
 
-export default function Home() {
+export default async function Home() {
+  const packages = await findPackages("./");
+  const version = packages[0].manifest;
+
   return (
     <div className={styles.page}>
+      {version.version}
       <main className={styles.main}>
         <Image
           className={styles.logo}

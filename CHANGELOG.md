@@ -1,5 +1,11 @@
 # changeset
 
+## 1.1.2
+
+### Patch Changes
+
+- e04a44b: remove `GITHUB_TOKEN` in `version.yml`
+
 ## 1.1.1
 
 ### Patch Changes

@@ -38,4 +38,4 @@ jobs:
         run: |
           pnpm changeset version
           git add .
-          git diff --staged --exit-code || (git commit -m 'ci(changelog): added changelog' && git push)
+          git diff --staged --exit-code || (git commit -m 'ci(changelog): update version' && git push)

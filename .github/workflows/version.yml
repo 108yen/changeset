@@ -10,6 +10,8 @@ concurrency: ${{ github.workflow }}-${{ github.ref }}
 jobs:
   version:
     name: Version
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

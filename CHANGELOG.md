@@ -1,5 +1,11 @@
 # changeset
 
+## 1.1.4
+
+### Patch Changes
+
+- c7a3999: github actions test
+
 ## 1.1.3
 
 ### Patch Changes

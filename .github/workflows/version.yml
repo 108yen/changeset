@@ -48,7 +48,7 @@ jobs:
           git push
 
       - name: Release tag
-        if: env.changed == 'ture'
+        if: env.changed == 'true'
         run: |
           pnpm changeset tag
           git push --follow-tags

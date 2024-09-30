@@ -38,7 +38,7 @@ jobs:
         run: |
           pnpm changeset version
           git add .
-          echo "changed=true" >> $GITHUB_ENV
+          echo "changed=false" >> $GITHUB_ENV
         shell: bash
 
       - name: Commit changes

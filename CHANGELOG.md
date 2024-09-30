@@ -1,5 +1,11 @@
 # changeset
 
+## 1.2.0
+
+### Minor Changes
+
+- e955c9c: added rerelse tag workflow
+
 ## 1.1.5
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # changeset
 
+## 1.2.1
+
+### Patch Changes
+
+- 60e8f05: fix typo
+
 ## 1.2.0
 
 ### Minor Changes

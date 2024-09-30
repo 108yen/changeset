@@ -39,13 +39,10 @@ jobs:
           pnpm changeset version
           git add .
           changed=$(git diff --staged --name-only | grep -q . && echo true || echo false)
-          echo $changed
           echo "changed=$changed" >> $GITHUB_ENV
-        shell: bash
 
       - name: Commit changes
         if: env.changed == 'true'
         run: |
           git commit -m 'ci(changelog): update version'
           git push
-        shell: bash

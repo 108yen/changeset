@@ -38,7 +38,7 @@ jobs:
         run: |
           pnpm changeset version
           git add .
-          changed=$(git diff --staged --exit-code && echo false || echo true)
+          changed=$(git diff --staged --name-only > /dev/null && echo false || echo true)
           echo $changed
           echo "changed=$changed" >> $GITHUB_ENV
         shell: bash

@@ -38,4 +38,11 @@ jobs:
         run: |
           pnpm changeset version
           git add .
-          git diff --staged --exit-code || (git commit -m 'ci(changelog): update version' && git push)
+          changed=$(git diff --staged --exit-code)
+          echo "changed=$changed" >> $GITHUB_ENV
+
+      - name: Commit changes
+        if: env.changed == 'true'
+        run: |
+          git commit -m 'ci(changelog): update version'
+          git push

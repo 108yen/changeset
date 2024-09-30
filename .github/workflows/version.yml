@@ -40,9 +40,11 @@ jobs:
           git add .
           changed=$(git diff --staged --exit-code && echo true || echo false)
           echo "changed=$changed" >> $GITHUB_ENV
+        shell: bash
 
       - name: Commit changes
         if: env.changed == 'true'
         run: |
           git commit -m 'ci(changelog): update version'
           git push
+        shell: bash

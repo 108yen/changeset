@@ -46,3 +46,10 @@ jobs:
         run: |
           git commit -m 'ci(changelog): update version'
           git push
+
+      - name: Release tag
+        if: env.changed == 'ture'
+        run: |
+          pnpm changeset tag
+          git push --follow-tags
+

@@ -1,5 +1,11 @@
 # changeset
 
+## 1.1.5
+
+### Patch Changes
+
+- c69ef6d: workflow test
+
 ## 1.1.4
 
 ### Patch Changes

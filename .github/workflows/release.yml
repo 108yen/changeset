@@ -36,13 +36,19 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Create release
-        run: pnpm release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Create release
+      #   run: pnpm release
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Merge main to dev
-        run: |
-          git switch dev
-          git merge main
-          git push
+     
+      - name: Create Release Pull Request
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          title: "Release new version"
+          commit: "ci(changesets): update version"
+          setupGitUser: false
+          branch: main
+        env :
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

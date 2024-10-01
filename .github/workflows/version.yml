@@ -10,9 +10,11 @@ concurrency: ${{ github.workflow }}-${{ github.ref }}
 jobs:
   version:
     name: Version
+
     permissions:
       pull-requests: write
       contents: write
+      
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -39,7 +41,6 @@ jobs:
         uses: changesets/action@v1
         with:
           title: "Update version"
-          version: pnpm changeset:version
           commit: "ci(changesets): update version"
           setupGitUser: false
         env :

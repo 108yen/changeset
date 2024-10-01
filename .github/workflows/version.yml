@@ -43,6 +43,7 @@ jobs:
           title: "Update version"
           commit: "ci(changesets): update version"
           setupGitUser: false
+          branch: main
         env :
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

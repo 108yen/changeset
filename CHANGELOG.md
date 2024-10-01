@@ -1,5 +1,19 @@
 # changeset
 
+## 1.4.0
+
+### Minor Changes
+
+- ddf2ff2: added tag workflow
+
+### Patch Changes
+
+- be01269: fix version command
+- bd8c118: update version script
+- acf62de: custom version script
+- dae1e92: fix conditional statement
+- dfc8f94: update version script to use `package.json` script
+
 ## 1.3.0
 
 ### Minor Changes

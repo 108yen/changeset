@@ -1,5 +1,11 @@
 # changeset
 
+## 1.6.0
+
+### Minor Changes
+
+- [#8](https://github.com/108yen/changeset/pull/8) [`1f7478c`](https://github.com/108yen/changeset/commit/1f7478ca0d2dd2179cdd43c4717f831626569b24) Thanks [@github-actions](https://github.com/apps/github-actions)! - run publish command in release workflow
+
 ## 1.5.0
 
 ### Minor Changes

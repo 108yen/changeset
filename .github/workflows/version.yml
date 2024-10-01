@@ -3,7 +3,7 @@ name: Version
 on:
   push:
     branches:
-      - main
+      - dev
       
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
@@ -14,7 +14,7 @@ jobs:
     permissions:
       pull-requests: write
       contents: write
-      
+
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

@@ -1,5 +1,11 @@
 # changeset
 
+## 1.4.1
+
+### Patch Changes
+
+- b3939ea: added `dev` branch and update workflow to triger on push dev branch
+
 ## 1.4.0
 
 ### Minor Changes

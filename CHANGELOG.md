@@ -1,5 +1,11 @@
 # changeset
 
+## 1.5.0
+
+### Minor Changes
+
+- [#7](https://github.com/108yen/changeset/pull/7) [`7016eba`](https://github.com/108yen/changeset/commit/7016eba6881e1a5898ac4d7a91bee18d3a4ed79b) Thanks [@github-actions](https://github.com/apps/github-actions)! - install changelog-github and setup
+
 ## 1.4.1
 
 ### Patch Changes

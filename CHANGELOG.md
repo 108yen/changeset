@@ -1,5 +1,11 @@
 # changeset
 
+## 1.6.1
+
+### Patch Changes
+
+- [`40bc737`](https://github.com/108yen/changeset/commit/40bc737d45c9c19c89cced6319db802aeb6111bd) Thanks [@108yen](https://github.com/108yen)! - push tag
+
 ## 1.6.0
 
 ### Minor Changes

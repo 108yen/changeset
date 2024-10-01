@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "changeset:version": "pnpm changeset version && pnpm changeset tag"
+    "changeset:version": "pnpm changeset version && pnpm changeset tag && git push --follow-tags"
   },
   "dependencies": {
     "find-packages": "^10.0.4",

@@ -36,8 +36,10 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Create tag
-        run: |
-          pnpm changeset tag
-          git push --follow-tags
+      - name: Create release
+        run: pnpm changeset publish
+      # - name: Create tag
+      #   run: |
+      #     pnpm changeset tag
+      #     git push --follow-tags
 

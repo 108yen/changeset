@@ -24,32 +24,38 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          
+
       - name: Setup Git user
-        shell: bash
         run: |
           git config --global user.email "kazuking.1911@gmail.com"
           git config --global user.name "108yen"
           
-      - name: Install dependencies
-        run: pnpm install
+      - name: Create Release Pull Request
+        uses: changesets/action@v1
+        with:
+          title: "Update version"
+          commit: "ci(changesets): update version"
+          setupGitUser: false
+          
+      # - name: Install dependencies
+      #   run: pnpm install
 
-      - name: Version Update
-        run: |
-          pnpm changeset version
-          git add .
-          changed=$(git diff --staged --name-only | grep -q . && echo true || echo false)
-          echo "changed=$changed" >> $GITHUB_ENV
+      # - name: Version Update
+      #   run: |
+      #     pnpm changeset version
+      #     git add .
+      #     changed=$(git diff --staged --name-only | grep -q . && echo true || echo false)
+      #     echo "changed=$changed" >> $GITHUB_ENV
 
-      - name: Commit changes
-        if: env.changed == 'true'
-        run: |
-          git commit -m 'ci(changelog): update version'
-          git push
+      # - name: Commit changes
+      #   if: env.changed == 'true'
+      #   run: |
+      #     git commit -m 'ci(changelog): update version'
+      #     git push
 
-      - name: Release tag
-        if: env.changed == 'true'
-        run: |
-          pnpm changeset tag
-          git push --follow-tags
+      # - name: Release tag
+      #   if: env.changed == 'true'
+      #   run: |
+      #     pnpm changeset tag
+      #     git push --follow-tags
 

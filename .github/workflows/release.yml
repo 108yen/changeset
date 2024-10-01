@@ -40,9 +40,3 @@ jobs:
         run: pnpm release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Merge main to dev
-        run: |
-          git switch dev
-          git merge main
-          git push

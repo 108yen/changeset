@@ -1,5 +1,11 @@
 # changeset
 
+## 1.6.3
+
+### Patch Changes
+
+- [#11](https://github.com/108yen/changeset/pull/11) [`e7e2f43`](https://github.com/108yen/changeset/commit/e7e2f43baf62b11fd2fb68f6c87a883c22ffeae8) Thanks [@github-actions](https://github.com/apps/github-actions)! - change base branch to dev
+
 ## 1.6.2
 
 ### Patch Changes

@@ -2,4 +2,4 @@
 "changeset": patch
 ---
 
-remove `contents:write` permisstion
+`contents:write` permission test

@@ -1,5 +1,15 @@
 # changeset
 
+## 1.8.0
+
+### Minor Changes
+
+- [`8d2f35e`](https://github.com/108yen/changeset/commit/8d2f35edac69682f4def1e8df4aab839d3c8641c) Thanks [@108yen](https://github.com/108yen)! - added git operation workflow
+
+### Patch Changes
+
+- [`214fb23`](https://github.com/108yen/changeset/commit/214fb23d3f73c1b258b17eec0e6431b6c70bbf4a) Thanks [@108yen](https://github.com/108yen)! - remove tag script
+
 ## 1.7.1
 
 ### Patch Changes

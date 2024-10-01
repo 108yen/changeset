@@ -1,5 +1,11 @@
 # changeset
 
+## 1.7.1
+
+### Patch Changes
+
+- [`aac749d`](https://github.com/108yen/changeset/commit/aac749d19158693d758c4bf36320c782e345bc50) Thanks [@108yen](https://github.com/108yen)! - added github token to release script
+
 ## 1.7.0
 
 ### Minor Changes

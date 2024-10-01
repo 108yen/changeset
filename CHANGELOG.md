@@ -1,5 +1,11 @@
 # changeset
 
+## 1.2.2
+
+### Patch Changes
+
+- 7d6e296: update changeset config
+
 ## 1.2.1
 
 ### Patch Changes

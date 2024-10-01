@@ -1,5 +1,11 @@
 # changeset
 
+## 1.8.1
+
+### Patch Changes
+
+- [`afbcf52`](https://github.com/108yen/changeset/commit/afbcf52dbc95eb35b302720f185755cd01b9855a) Thanks [@108yen](https://github.com/108yen)! - replace release workflow to changeset/actions
+
 ## 1.8.0
 
 ### Minor Changes

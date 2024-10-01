@@ -1,5 +1,17 @@
 # changeset
 
+## 1.3.0
+
+### Minor Changes
+
+- 7f7f2a1: added release workflow
+
+### Patch Changes
+
+- b01c1a1: update changeset config
+- 47d0d62: `contents:write` permission test
+- 91afcc4: added tag workflow
+
 ## 1.2.2
 
 ### Patch Changes

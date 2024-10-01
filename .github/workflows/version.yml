@@ -35,6 +35,7 @@ jobs:
         run: pnpm install
           
       - name: Create Release Pull Request
+        id: changesets
         uses: changesets/action@v1
         with:
           title: "Update version"
@@ -42,6 +43,12 @@ jobs:
           setupGitUser: false
         env :
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Release tag
+        if: steps.changesets.outputs.published == 'true'
+        run: |
+          pnpm changeset tag
+          git push --follow-tags
 
       # - name: Version Update
       #   run: |

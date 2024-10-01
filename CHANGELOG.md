@@ -1,5 +1,11 @@
 # changeset
 
+## 1.6.2
+
+### Patch Changes
+
+- [`e0cdb66`](https://github.com/108yen/changeset/commit/e0cdb668a22d6b357c3c798197e079b5914a152a) Thanks [@108yen](https://github.com/108yen)! - remove `private: ture` from `package.json`
+
 ## 1.6.1
 
 ### Patch Changes

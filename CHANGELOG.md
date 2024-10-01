@@ -1,5 +1,11 @@
 # changeset
 
+## 1.7.0
+
+### Minor Changes
+
+- [`e41f6dd`](https://github.com/108yen/changeset/commit/e41f6dd0a94625f230606ef913a0f8898c876c3a) Thanks [@108yen](https://github.com/108yen)! - added github release script.
+
 ## 1.6.3
 
 ### Patch Changes

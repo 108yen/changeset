@@ -11,7 +11,8 @@ jobs:
   version:
     name: Version
     permissions:
-      contents: write
+      pull-requests: write
+      # contents: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -36,6 +37,8 @@ jobs:
           title: "Update version"
           commit: "ci(changesets): update version"
           setupGitUser: false
+        env :
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
       # - name: Install dependencies
       #   run: pnpm install

@@ -10,7 +10,7 @@
 
 ### Minor Changes
 
-- e955c9c: added rerelse tag workflow
+- e955c9c: added release tag workflow
 
 ## 1.1.5
 

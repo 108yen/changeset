@@ -16,7 +16,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 10
+          fetch-depth: 0
+
+      - name: Switch git branch
+        run: git switch main
 
       - name: Display git flow
         run: git log --graph --color=always --abbrev-commit --decorate --date=relative --pretty=medium --oneline

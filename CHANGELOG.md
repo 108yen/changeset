@@ -1,5 +1,17 @@
 # changeset
 
+## 1.9.0
+
+### Minor Changes
+
+- [`23e7ab7`](https://github.com/108yen/changeset/commit/23e7ab7ca36cc5b10d676767cadb5062cc496dc1) Thanks [@108yen](https://github.com/108yen)! - added merge branch main into dev workflow to release workflow
+
+- [#16](https://github.com/108yen/changeset/pull/16) [`ae52977`](https://github.com/108yen/changeset/commit/ae52977bff3e9c353f9b1606dcdfa9ef39dccb73) Thanks [@github-actions](https://github.com/apps/github-actions)! - added test workflow and display git flow step
+
+### Patch Changes
+
+- [#16](https://github.com/108yen/changeset/pull/16) [`cc9fe98`](https://github.com/108yen/changeset/commit/cc9fe98582d7e52798f97aa4f6f82fe7bdc99061) Thanks [@github-actions](https://github.com/apps/github-actions)! - restore create release
+
 ## 1.8.1
 
 ### Patch Changes

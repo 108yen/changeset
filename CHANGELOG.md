@@ -1,5 +1,11 @@
 # changeset
 
+## 1.10.0
+
+### Minor Changes
+
+- [`bdc1853`](https://github.com/108yen/changeset/commit/bdc1853131081a63ca9daca9939ed55899e54238) Thanks [@108yen](https://github.com/108yen)! - added `README.md`
+
 ## 1.9.2
 
 ### Patch Changes

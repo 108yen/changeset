@@ -5,7 +5,7 @@ on:
     types:
       - closed
     branches:
-      - main
+      - dev
 
 jobs:
   release:
@@ -14,17 +14,17 @@ jobs:
     permissions:
       contents: write
 
-    if: github.event.pull_request.merged == true
+    if: github.event.pull_request.merged == true && startsWith(github.head_ref, 'changeset-release')
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-        
+
       - name: Setup PNPM
         uses: pnpm/action-setup@v3.0.0
-        
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -34,7 +34,7 @@ jobs:
         run: |
           git config --global user.email "kazuking.1911@gmail.com"
           git config --global user.name "108yen"
-          
+
       - name: Install dependencies
         run: pnpm install
 
@@ -45,6 +45,6 @@ jobs:
 
       - name: Merge branch
         run: |
-          git switch dev
-          git merge main
+          git switch main
+          git merge dev
           git push

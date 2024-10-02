@@ -37,14 +37,14 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
-
-      - name: Create release
-        run: pnpm release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
+        
       - name: Merge branch
         run: |
           git switch main
           git merge dev
           git push
+
+      - name: Create release
+        run: pnpm release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

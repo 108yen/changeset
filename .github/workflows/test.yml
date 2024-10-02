@@ -1,6 +1,9 @@
 name: Test workflow
 
-on: push
+on:
+  push:
+    branches:
+      - dev
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
@@ -13,7 +16,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 3
+          fetch-depth: 10
 
       - name: Display git flow
         run: git log --graph --color=always --abbrev-commit --decorate --date=relative --pretty=medium --oneline

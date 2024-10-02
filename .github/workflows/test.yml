@@ -1,0 +1,19 @@
+name: Test workflow
+
+on: push
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
+jobs:
+  test:
+    name: Git fetch test
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 3
+
+      - name: Display git flow
+        run: git log --graph --color=always --abbrev-commit --decorate --date=relative --pretty=medium --oneline

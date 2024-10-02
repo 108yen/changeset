@@ -1,5 +1,11 @@
 # changeset
 
+## 1.9.1
+
+### Patch Changes
+
+- [`ce91680`](https://github.com/108yen/changeset/commit/ce9168025cc8f2480c6130468f8e32e31ac1ff3f) Thanks [@108yen](https://github.com/108yen)! - update version workflow PR target
+
 ## 1.9.0
 
 ### Minor Changes

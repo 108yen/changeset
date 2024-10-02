@@ -1,5 +1,11 @@
 # changeset
 
+## 1.9.2
+
+### Patch Changes
+
+- [`a9af78c`](https://github.com/108yen/changeset/commit/a9af78c0fc0237f6379727d1cdd4780ae79c61c0) Thanks [@108yen](https://github.com/108yen)! - Fixed workflow order. Reverse merge change to main and release.
+
 ## 1.9.1
 
 ### Patch Changes

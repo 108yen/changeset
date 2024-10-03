@@ -46,7 +46,7 @@ jobs:
           git merge dev
           git push
 
-      - name: Create release
-        run: pnpm release
+      - name: Release
+        uses: 108yen/changeset-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

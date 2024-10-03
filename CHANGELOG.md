@@ -1,5 +1,11 @@
 # changeset
 
+## 1.11.1
+
+### Patch Changes
+
+- [`dd59951`](https://github.com/108yen/changeset/commit/dd59951224619494fc2e44a54eefab9931cbb8f2) - `108yen/changeset-release@v1` test.
+
 ## 1.11.0
 
 ### Minor Changes

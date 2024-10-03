@@ -1,5 +1,11 @@
 # changeset
 
+## 1.11.2
+
+### Patch Changes
+
+- [`b3819f0`](https://github.com/108yen/changeset/commit/b3819f0f567128afeb02e5bb4b9fb2a4b9e0d92a) - Search need steps.
+
 ## 1.11.1
 
 ### Patch Changes

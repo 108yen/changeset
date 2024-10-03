@@ -1,5 +1,16 @@
 # changeset
 
+## 1.11.0
+
+### Minor Changes
+
+- [`344847b`](https://github.com/108yen/changeset/commit/344847b711772cc77de0d7e4e302290c111cfc14) - Added `changelog-function.js` to customize change log.
+
+### Patch Changes
+
+- [`7bed736`](https://github.com/108yen/changeset/commit/7bed7362a8ddeed0d297981f6f0c2e2db16baae4) - Replace release step to published workflow(108yen/changeset-release@v1).
+- [`483227a`](https://github.com/108yen/changeset/commit/483227a63c827ca1e6b874f662518576fcd397f1) - Fixed test workflow. Comment out git operation steps.
+
 ## 1.10.0
 
 ### Minor Changes

@@ -1,5 +1,11 @@
 # changeset
 
+## 1.11.3
+
+### Patch Changes
+
+- [`4b10e2e`](https://github.com/108yen/changeset/commit/4b10e2eebe244597f91e8862956b2262ca0b580a) - Permissions test. Try run no permission release workflow.
+
 ## 1.11.2
 
 ### Patch Changes

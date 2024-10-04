@@ -13,8 +13,8 @@ jobs:
   release:
     name: release
 
-    permissions:
-      contents: write
+    # permissions:
+    #   contents: write
 
     if: github.event.pull_request.merged == true && startsWith(github.head_ref, 'changeset-release')
     runs-on: ubuntu-latest

@@ -5,7 +5,7 @@ on:
     types:
       - closed
     branches:
-      - main
+      - release
       
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
@@ -31,6 +31,6 @@ jobs:
         
       - name: Merge branch
         run: |
-          git switch dev
-          git merge main
+          git switch main
+          git merge relese
           git push

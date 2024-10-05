@@ -3,7 +3,7 @@ name: Version
 on:
   push:
     branches:
-      - dev
+      - main
       
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
@@ -43,6 +43,6 @@ jobs:
           title: "Update version"
           commit: "ci(changesets): update version"
           setupGitUser: false
-          branch: main
+          branch: release
         env :
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

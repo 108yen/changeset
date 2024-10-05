@@ -26,7 +26,8 @@ jobs:
           fetch-depth: 0
           
       - name: Release
-        uses: 108yen/changeset-release@v1
+        # uses: 108yen/changeset-release@v1
+        run: pnpm release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         

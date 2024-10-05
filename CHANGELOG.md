@@ -1,5 +1,11 @@
 # changeset
 
+## 1.11.12
+
+### Patch Changes
+
+- [`26fccc8`](https://github.com/108yen/changeset/commit/26fccc85506304b28cc0afd6dd5d11e2e3c4ea08) Thanks [@108yen](https://github.com/108yen)! - no param test
+
 ## 1.11.11
 
 ### Patch Changes

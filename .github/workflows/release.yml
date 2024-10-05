@@ -49,8 +49,8 @@ jobs:
       - name: Release
         uses: 108yen/changeset-release@v1
         # run: pnpm release
-        # with:
-        #   target: release
+        with:
+          target: release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         

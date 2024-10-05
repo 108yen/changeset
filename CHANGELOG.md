@@ -1,5 +1,11 @@
 # changeset
 
+## 1.11.10
+
+### Patch Changes
+
+- [`3b691b4`](https://github.com/108yen/changeset/commit/3b691b4f958d62976f699c41244f766205736462) Thanks [@108yen](https://github.com/108yen)! - Fix workflow. Added install steps.
+
 ## 1.11.9
 
 ### Patch Changes

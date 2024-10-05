@@ -1,5 +1,15 @@
 # changeset
 
+## 1.11.5
+
+### Patch Changes
+
+- [`74d2b96`](https://github.com/108yen/changeset/commit/74d2b96e28ce9d77ee369d5a8213fa7a47815c10) Thanks [@108yen](https://github.com/108yen)! - update merge branch step
+
+- [`b0bd6d6`](https://github.com/108yen/changeset/commit/b0bd6d6ec88a51f6017b411e130f4e67f67127f9) Thanks [@108yen](https://github.com/108yen)! - Test to issue a merge PR for the changeset-release branch on another branch.
+
+- [`af0ffd8`](https://github.com/108yen/changeset/commit/af0ffd80cf1b36d99a55d96fde8df186fa2ffe0b) Thanks [@108yen](https://github.com/108yen)! - test changeset
+
 ## 1.11.4
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # changeset
 
+## 1.11.13
+
+### Patch Changes
+
+- [`b0ae981`](https://github.com/108yen/changeset/commit/b0ae9812959c03406fd3e74504eb3e923d52b800) Thanks [@108yen](https://github.com/108yen)! - Remove comment out.
+
 ## 1.11.12
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # changeset
 
+## 1.11.9
+
+### Patch Changes
+
+- [`460401f`](https://github.com/108yen/changeset/commit/460401f6a7460251f28b5cb880b42cd0ff0035e5) Thanks [@108yen](https://github.com/108yen)! - Target commitish test
+
 ## 1.11.8
 
 ### Patch Changes

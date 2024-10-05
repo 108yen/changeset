@@ -68,6 +68,7 @@ async function main() {
       name: tagName,
       tag_name: tagName,
       body: content,
+      target_commitish: "release",
       ...github.context.repo,
     });
   } catch {

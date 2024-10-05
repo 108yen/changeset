@@ -1,5 +1,0 @@
----
-"changeset": patch
----
-
-Restore permission

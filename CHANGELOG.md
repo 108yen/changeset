@@ -1,5 +1,15 @@
 # changeset
 
+## 1.11.4
+
+### Patch Changes
+
+- [`ed6c3e3`](https://github.com/108yen/changeset/commit/ed6c3e315ab4fda67c122390670b293b09126178) Thanks [@108yen](https://github.com/108yen)! - Restore permission
+
+- [`1bb0666`](https://github.com/108yen/changeset/commit/1bb06663e970ddb052e6b48f7074505ab54902af) Thanks [@108yen](https://github.com/108yen)! - Additional changeset test.
+
+- [#25](https://github.com/108yen/changeset/pull/25) [`ba95c19`](https://github.com/108yen/changeset/commit/ba95c190bf284d44e632c39031ef8ed6ac3cde66) Thanks [@108yen](https://github.com/108yen)! - PR test.
+
 ## 1.11.3
 
 ### Patch Changes

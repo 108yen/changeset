@@ -22,33 +22,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: release
           fetch-depth: 0
-
       
-        
-      # - name: Setup PNPM
-      #   uses: pnpm/action-setup@v3.0.0
-        
-      # - name: Setup Node.js
-      #   uses: actions/setup-node@v4
-      #   with:
-      #     node-version: "20"
-
-      # - name: Setup Git user
-      #   run: |
-      #     git config --global user.email "kazuking.1911@gmail.com"
-      #     git config --global user.name "108yen"
-          
-      # - name: Install dependencies
-      #   run: pnpm install
-
-
-        
-          
       - name: Release
         uses: 108yen/changeset-release@v1
-        # run: pnpm release
         with:
           target: release
         env:

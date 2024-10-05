@@ -1,5 +1,11 @@
 # changeset
 
+## 1.11.11
+
+### Patch Changes
+
+- [`8ded2f2`](https://github.com/108yen/changeset/commit/8ded2f25ccd91ca45798b68f3d9943c62cd3d6d0) Thanks [@108yen](https://github.com/108yen)! - test new feature of changeset release
+
 ## 1.11.10
 
 ### Patch Changes

@@ -1,5 +1,13 @@
 # changeset
 
+## 1.11.14
+
+### Patch Changes
+
+- [#35](https://github.com/108yen/changeset/pull/35) [`5e47aac`](https://github.com/108yen/changeset/commit/5e47aac0b0860903fb9019d025c96d3135f1ce85) Thanks [@108yen](https://github.com/108yen)! - Test changese 1.
+
+- [#36](https://github.com/108yen/changeset/pull/36) [`bfe0433`](https://github.com/108yen/changeset/commit/bfe0433331cbf269d17b28d9c0558b5a07f3bf72) Thanks [@108yen](https://github.com/108yen)! - Test changese 2.
+
 ## 1.11.13
 
 ### Patch Changes

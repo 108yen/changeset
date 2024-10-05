@@ -1,5 +1,13 @@
 # changeset
 
+## 1.11.6
+
+### Patch Changes
+
+- [`f5ed718`](https://github.com/108yen/changeset/commit/f5ed718bc8c1f0d74a6fb90c8190dfe9d474f27c) Thanks [@108yen](https://github.com/108yen)! - link test
+
+- [`273eeec`](https://github.com/108yen/changeset/commit/273eeec179e82bd4db11b4937352ea9cf1cd8c60) Thanks [@108yen](https://github.com/108yen)! - Try best practice
+
 ## 1.11.5
 
 ### Patch Changes

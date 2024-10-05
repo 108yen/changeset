@@ -1,5 +1,11 @@
 # changeset
 
+## 1.11.8
+
+### Patch Changes
+
+- [`e6c9535`](https://github.com/108yen/changeset/commit/e6c953520b7055c9e025be0fbf65d47cd8a530a6) Thanks [@108yen](https://github.com/108yen)! - Add ref
+
 ## 1.11.7
 
 ### Patch Changes

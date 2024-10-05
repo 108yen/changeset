@@ -1,5 +1,11 @@
 # changeset
 
+## 1.11.7
+
+### Patch Changes
+
+- [`41a20ae`](https://github.com/108yen/changeset/commit/41a20aec02029f362c859aeb5451354a9a00b6ee) Thanks [@108yen](https://github.com/108yen)! - Fixed typo and comment out test
+
 ## 1.11.6
 
 ### Patch Changes

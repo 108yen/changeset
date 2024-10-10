@@ -48,7 +48,7 @@ async function main() {
   await exec("git", ["tag", minor]);
   await exec("git", ["tag", major]);
 
-  core.info(`Push to ${major}}.`);
+  core.info(`Push to ${major}.`);
   await exec("git", [
     "push",
     "--force",

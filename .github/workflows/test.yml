@@ -10,6 +10,9 @@ concurrency: ${{ github.workflow }}-${{ github.ref }}
 jobs:
   test:
     name: Git commit test
+    
+    permissions:
+      contents: write
 
     runs-on: ubuntu-latest
     steps:

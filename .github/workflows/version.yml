@@ -43,8 +43,6 @@ jobs:
           title: "Update version"
           commit: "ci(changesets): update version"
           setupGitUser: false
-          branch: main
-          version: echo "This is version script!"
-          publish: echo "This is publish script!"
+          branch: release
         env :
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

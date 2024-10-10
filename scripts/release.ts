@@ -1,44 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import fs from "fs";
 import { findPackages } from "find-packages";
-import { getChangelogEntry } from "./utils";
-import { GitHub, getOctokitOptions } from "@actions/github/lib/utils";
-import { throttling } from "@octokit/plugin-throttling";
+import { getChangelogEntry, setupOctokit } from "./utils";
 import * as github from "@actions/github";
-
-const setupOctokit = (githubToken: string) => {
-  return new (GitHub.plugin(throttling))(
-    getOctokitOptions(githubToken, {
-      throttle: {
-        onRateLimit: (retryAfter, options: any, octokit, retryCount) => {
-          console.warn(
-            `Request quota exhausted for request ${options.method} ${options.url}`
-          );
-
-          if (retryCount <= 2) {
-            console.info(`Retrying after ${retryAfter} seconds!`);
-            return true;
-          }
-        },
-        onSecondaryRateLimit: (
-          retryAfter,
-          options: any,
-          octokit,
-          retryCount
-        ) => {
-          console.warn(
-            `SecondaryRateLimit detected for request ${options.method} ${options.url}`
-          );
-
-          if (retryCount <= 2) {
-            console.info(`Retrying after ${retryAfter} seconds!`);
-            return true;
-          }
-        },
-      },
-    })
-  );
-};
 
 async function main() {
   try {

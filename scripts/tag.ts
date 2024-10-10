@@ -37,15 +37,16 @@ async function main() {
   await exec("git", ["push", "--force", "origin", tag]);
 
   core.summary.addHeading("Generate version tags.", "2");
-  core.summary.addRaw(`Push commit and tags to ${major} branch.`);
+  core.summary.addRaw(`Push commit and tags to \`${major}\` branch.`);
+  core.summary.addEOL();
   core.summary.addTable([
     [
       { data: "type", header: true },
       { data: "value", header: true },
     ],
-    ["semver", tag],
-    ["minor", minor],
     ["major", major],
+    ["minor", minor],
+    ["patch", tag],
   ]);
   core.summary.write();
 }

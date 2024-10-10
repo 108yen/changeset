@@ -38,12 +38,14 @@ async function main() {
   //   return;
   // }
 
-  core.info("Detaching branch....")
+  core.info("Detaching branch....");
   await exec("git", ["checkout", "--detach"]);
-  await exec("git", ["add", "--force", "."]);
-  await exec("git", ["commit", "-m", tag]);
+  //MEMO: `git add --force` add all files with ignore .gitignore
+  //so I need to stage force only dist/ directory. 
+  await exec("git", ["add", "."]);
+  await exec("git", ["commit", "-m", tag, "--quiet"]);
 
-  core.info("Creating tags...")
+  core.info("Creating tags...");
   await exec("git", ["tag", tag]);
   await exec("git", ["tag", minor]);
   await exec("git", ["tag", major]);

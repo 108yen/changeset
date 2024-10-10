@@ -1,5 +1,11 @@
 # changeset
 
+## 1.12.1
+
+### Patch Changes
+
+- [`127049c`](https://github.com/108yen/changeset/commit/127049c9cac1a2d0fdee62f768d3fe5ecfb32aeb) Thanks [@108yen](https://github.com/108yen)! - test changelog.
+
 ## 1.11.14
 
 ### Patch Changes

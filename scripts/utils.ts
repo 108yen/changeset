@@ -1,7 +1,10 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import remarkParse from "remark-parse";
 import { unified } from "unified";
 import { toString } from "mdast-util-to-string";
 import remarkStringify from "remark-stringify";
+import { GitHub, getOctokitOptions } from "@actions/github/lib/utils";
+import { throttling } from "@octokit/plugin-throttling";
 
 export const BumpLevels = {
   dep: 0,
@@ -62,4 +65,38 @@ export function getChangelogEntry(changelog: string, version: string) {
     content: unified().use(remarkStringify).stringify(ast),
     highestLevel: highestLevel,
   };
+}
+
+export function setupOctokit(githubToken:string) {
+   return new (GitHub.plugin(throttling))(
+     getOctokitOptions(githubToken, {
+       throttle: {
+         onRateLimit: (retryAfter, options: any, octokit, retryCount) => {
+           console.warn(
+             `Request quota exhausted for request ${options.method} ${options.url}`
+           );
+
+           if (retryCount <= 2) {
+             console.info(`Retrying after ${retryAfter} seconds!`);
+             return true;
+           }
+         },
+         onSecondaryRateLimit: (
+           retryAfter,
+           options: any,
+           octokit,
+           retryCount
+         ) => {
+           console.warn(
+             `SecondaryRateLimit detected for request ${options.method} ${options.url}`
+           );
+
+           if (retryCount <= 2) {
+             console.info(`Retrying after ${retryAfter} seconds!`);
+             return true;
+           }
+         },
+       },
+     })
+   );
 }

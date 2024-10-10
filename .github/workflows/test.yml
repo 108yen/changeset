@@ -4,12 +4,16 @@ on:
   push:
     branches:
       - dev
+      # - main
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
   test:
-    name: Git fetch test
+    name: Git commit test
+
+    permissions:
+      contents: write
 
     runs-on: ubuntu-latest
     steps:
@@ -18,8 +22,24 @@ jobs:
         # with:
         #   fetch-depth: 0
 
-      # - name: Switch git branch
-      #   run: git switch main
+      - name: Setup PNPM
+        uses: pnpm/action-setup@v3.0.0
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
 
-      - name: Display git flow
-        run: git log --graph --color=always --abbrev-commit --decorate --date=relative --pretty=medium --oneline
+      - name: Setup Git user
+        run: |
+          git config --global user.email "kazuking.1911@gmail.com"
+          git config --global user.name "108yen"
+          
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build
+        run: pnpm build
+
+      - name: Generate tags
+        run: pnpm tag

@@ -59,6 +59,8 @@ async function main() {
     `HEAD:refs/heads/${major}`,
   ]);
 
+  await exec("git", ["push", "--force", "origin", major]);
+
   //TODO: checkout release branch or no branch
   //TODO: commit changes
   //TODO: check existing tags

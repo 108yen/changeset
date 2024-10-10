@@ -41,8 +41,8 @@ async function main() {
   core.info("Detaching branch....");
   await exec("git", ["checkout", "--detach"]);
   //MEMO: `git add --force` add all files with ignore .gitignore
-  //so I need to stage force only dist/ directory. 
-  await exec("git", ["add", "."]);
+  //so I need to stage force only dist/ directory.
+  await exec("git", ["add", "--force", "build"]);
   await exec("git", ["commit", "-m", tag, "--quiet"]);
 
   core.info("Creating tags...");

@@ -10,7 +10,7 @@ concurrency: ${{ github.workflow }}-${{ github.ref }}
 jobs:
   test:
     name: Git commit test
-    
+
     permissions:
       contents: write
 
@@ -36,6 +36,9 @@ jobs:
           
       - name: Install dependencies
         run: pnpm install
+
+      - name: Build
+        run: pnpm build
 
       - name: Generate tags
         run: pnpm tag

@@ -60,6 +60,8 @@ async function main() {
   ]);
 
   await exec("git", ["push", "--force", "origin", major]);
+  await exec("git", ["push", "--force", "origin", minor]);
+  await exec("git", ["push", "--force", "origin", tag]);
 
   //TODO: checkout release branch or no branch
   //TODO: commit changes
